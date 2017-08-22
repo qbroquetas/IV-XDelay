@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="X0DcrN" name="IvxDelayStereo" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.IvxDelayStereo" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="0" buildAUv3="0" buildRTAS="0"
+              buildAAX="0" pluginName="IV-X Delay (Stereo)" pluginDesc="IV-X Delay (Stereo)"
+              pluginManufacturer="Joaquim Broquetas" pluginManufacturerCode="Manu"
+              pluginCode="X0dc" pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="IvxDelayStereoAU" pluginRTASCategory=""
+              aaxIdentifier="com.yourcompany.IvxDelayStereo" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="5.1.1" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" buildStandalone="0" enableIAA="0" cppLanguageStandard="11">
+  <MAINGROUP id="tKKKZo" name="IvxDelayStereo">
+    <GROUP id="{7D11A2C3-12D9-B868-E1F9-6E58221637E7}" name="Source">
+      <FILE id="JQDRyn" name="NoiseTable.cpp" compile="1" resource="0" file="Source/NoiseTable.cpp"/>
+      <FILE id="coLmZ0" name="NoiseTable.h" compile="0" resource="0" file="Source/NoiseTable.h"/>
+      <FILE id="lFgnb0" name="ShaperTable.cpp" compile="1" resource="0" file="Source/ShaperTable.cpp"/>
+      <FILE id="n37HbU" name="ShaperTable.h" compile="0" resource="0" file="Source/ShaperTable.h"/>
+      <FILE id="WdUjCT" name="FirTable.cpp" compile="1" resource="0" file="Source/FirTable.cpp"/>
+      <FILE id="UvmEpl" name="FirTable.h" compile="0" resource="0" file="Source/FirTable.h"/>
+      <FILE id="r2P9px" name="r8bbase.cpp" compile="1" resource="0" file="libraries/r8brain-free-src/r8bbase.cpp"/>
+      <FILE id="EICwud" name="DelayProcessor.cpp" compile="1" resource="0"
+            file="Source/DelayProcessor.cpp"/>
+      <FILE id="YoW6eT" name="DelayProcessor.h" compile="0" resource="0"
+            file="Source/DelayProcessor.h"/>
+      <FILE id="Nsw80T" name="level_processor.cpp" compile="1" resource="0"
+            file="Source/level_processor.cpp"/>
+      <FILE id="Rp3AG8" name="level_processor.h" compile="0" resource="0"
+            file="Source/level_processor.h"/>
+      <FILE id="VhFGKa" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Y4BrpK" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="nznhxX" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="OMWGxl" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="IvxDelayStereo" headerPath="../../libraries/r8brain-free-src"
+                       libraryPath="../../libraries/r8brain-free-src"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="IvxDelayStereo" headerPath="../../libraries/r8brain-free-src"
+                       libraryPath="../../libraries/r8brain-free-src"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_graphics" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_data_structures" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_gui_basics" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_gui_extra" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_audio_basics" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_audio_processors" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="JuceLibraryCode/modulesmodules"/>
+        <MODULEPATH id="juce_events" path="JuceLibraryCode/modulesmodules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="IvxDelayStereo"
+                       headerPath="../../libraries/r8brain-free-src" libraryPath="../../libraries/r8brain-free-src"
+                       linuxArchitecture="-m64"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="IvxDelayStereo"
+                       headerPath="../../libraries/r8brain-free-src" libraryPath="../../libraries/r8brain-free-src"
+                       linuxArchitecture="-m64"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_graphics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_events" path="JuceLibraryCode/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>

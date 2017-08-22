@@ -1,0 +1,13 @@
+IvxDelay/Builds/LinuxMakefile/build
+IvxDelayStereo/Builds/LinuxMakefile/build
+IvxDelay/Builds/VisualStudio2015/x64
+IvxDelayStereo/Builds/VisualStudio2015/x64
+IvxDelay/Builds/VisualStudio2015/Debug
+IvxDelayStereo/Builds/VisualStudio2015/Debug
+IvxDelay/Builds/VisualStudio2015/.vs
+IvxDelayStereo/Builds/VisualStudio2015/.vs
+
+precompiled_VST_objects
+
+IvxDelay/Source/NoiseTable.cpp
+IvxDelayStereo/Source/NoiseTable.cpp
