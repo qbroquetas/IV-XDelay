@@ -8,6 +8,3 @@ IvxDelay/Builds/VisualStudio2015/.vs
 IvxDelayStereo/Builds/VisualStudio2015/.vs
 
 precompiled_VST_objects
-
-IvxDelay/Source/NoiseTable.cpp
-IvxDelayStereo/Source/NoiseTable.cpp
