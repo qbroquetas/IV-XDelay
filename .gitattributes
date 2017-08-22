@@ -1,0 +1,2 @@
+IvxDelay/Source/NoiseTable.cpp filter=lfs diff=lfs merge=lfs -text
+IvxDelayStereo/Source/NoiseTable.cpp filter=lfs diff=lfs merge=lfs -text
